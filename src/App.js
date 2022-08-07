@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import AdminHome from "./Pages/Admin/Dashboard/AdminHome";
+import AdminHome from "./Pages/Admin/AdminHome";
 import Home from "./Pages/Shared/Home/Home";
 import Login from "./Pages/Shared/Login/Login";
 import Register from "./Pages/Shared/Register/Register";
@@ -21,7 +21,7 @@ function App() {
           <Route exact path="/register">
             <Register />
           </Route>
-          <Route exact path="/admin">
+          <Route path="/admin">
             <AdminHome />
           </Route>
           <Route path="/">
