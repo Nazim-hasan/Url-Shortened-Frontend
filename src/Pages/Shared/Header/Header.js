@@ -1,19 +1,19 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
-function Header() {
+import { Row, Col, Container } from "react-bootstrap";
+const Header = () => {
   return (
-    <div>
-      <div>
+    <div style={{ height: "80px" }}>
+      <Container className="ps-1 pe-1">
         <Row className="justify-content-lg-center">
           <Col>
-            <h2 className="text-primary fw-bold mt-2 shadow p-3 mb-5 bg-body rounded text-center">
+            <h2 className="text-primary fw-bold mt-2 shadow py-3 mb-5 bg-body rounded text-center">
               Short URL
             </h2>
           </Col>
         </Row>
-      </div>
+      </Container>
     </div>
   );
-}
+};
 
 export default Header;
